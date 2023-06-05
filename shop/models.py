@@ -15,6 +15,10 @@ class Good(models.Model):
         return self.name
 
 
+class Plant(Good):
+    pass
+
+
 class Cart(models.Model):
     filled_image = models.ImageField(verbose_name="filled cart image")
     profile = models.IntegerField()
