@@ -212,3 +212,8 @@ ENV/
 /site
 
 # End of https://www.gitignore.io/api/macos,linux,django,python,pycharm
+/node_modules/
+/package.json
+/package-lock.json
+/pyvenv.cfg
+/Scripts/
