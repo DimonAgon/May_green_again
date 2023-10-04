@@ -1,7 +1,10 @@
 
 .intro{
   margin-inline: auto;
-  width: 36%;
+  width: 100%;
+  background-color: #c85789;
+  display: flex;
+  justify-content: center;
 }
 
 
