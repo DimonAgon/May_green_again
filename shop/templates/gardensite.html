@@ -14,8 +14,15 @@
 
     {% include 'included/_intro.html' %}
 
-    {% for plant in plants %} {% include 'included/_plant_cell.html' %} {% endfor %}
-
+    {% for plant in plants %}
+        {% if forloop.counter0|divisibleby:3 %}
+            <div class="row">
+        {% endif %}
+        {% include 'included/_plant_cell.html' %}
+        {% if forloop.counter|divisibleby:3 %}
+            </div>
+        {% endif %}
+    {% endfor %}
 {% endblock %}
 
 
