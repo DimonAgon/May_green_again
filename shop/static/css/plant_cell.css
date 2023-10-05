@@ -2,4 +2,6 @@
 .plant-cell{
     display: inline-block;
     text-align: center;
+    width: auto;
+    aspect-ratio: 1/1;
 }
