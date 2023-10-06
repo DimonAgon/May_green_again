@@ -16,7 +16,7 @@
 
     {% for plant in plants %}
         {% if forloop.counter0|divisibleby:3 %}
-            <div class="row">
+            <div class="row row-cols-3">
         {% endif %}
         {% include 'included/_plant_cell.html' %}
         {% if forloop.counter|divisibleby:3 %}
