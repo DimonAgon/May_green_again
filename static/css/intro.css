@@ -1,0 +1,9 @@
+.intro{
+  margin-inline: auto;
+  margin-bottom: 4px;
+  width: 100%;
+  background-color: #c85789;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+}
