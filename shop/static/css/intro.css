@@ -1,6 +1,7 @@
 
 .intro{
   margin-inline: auto;
+  margin-bottom: 4px;
   width: 100%;
   display: flex;
   justify-content: center;
