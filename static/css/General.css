@@ -12,6 +12,7 @@ a:hover{
 }
 
 .container{
+  text-align: center;
   align-content: center;
   width: 100%
 }
