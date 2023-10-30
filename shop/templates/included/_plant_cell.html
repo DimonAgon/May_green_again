@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="{% static "css/plant_cell.css" %}">
 
-<div class="col-md-4 px-2.3 pt-1 pb-0">
+<div class="col-md-4 px-3 pt-1 pb-0">
     <div class="card plant-cell">
         <div class="card-body">
             <div class="card-text">
@@ -10,5 +10,7 @@
             </div>
         </div>
     </div>
-    {% include 'included/_plant_cell/_smudge.html' %}
+    {% if forloop.counter0|divisibleby:3 %}
+        {% include 'included/_plant_cell/_smudge.html' %}
+    {% endif %}
 </div>
