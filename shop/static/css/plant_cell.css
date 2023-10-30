@@ -1,7 +1,10 @@
 
 .plant-cell{
+    border-style: solid;
+    border-width: 5px;
+    border-color: #C85789;
+    box-shadow: 0 0 0 1px black;
     text-align: center;
-    width: auto;
     aspect-ratio: 1/1;
 }
 
