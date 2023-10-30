@@ -2,4 +2,7 @@
 
 /* TODO: add hover */
 .smudge{
+    position: relative;
+    top: -26px;
+    left: -60px;
 }
