@@ -11,6 +11,10 @@
         </div>
     </div>
     {% if forloop.counter0|divisibleby:3 %}
-        {% include 'included/_plant_cell/_smudge.html' %}
+        {% include 'included/_plant_cell/_smudge_bottom.html' %}
+
+    {% elif forloop.counter|divisibleby:3 %}
+        {% include 'included/_plant_cell/_smudge_side.html' %}
     {% endif %}
+
 </div>
