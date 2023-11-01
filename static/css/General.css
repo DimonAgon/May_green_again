@@ -11,6 +11,11 @@ a:hover{
   color: #a0efcf;
 }
 
+.navbar-main.sticky{
+  position: fixed;
+  top: 0;
+}
+
 .container{
   text-align: center;
   align-content: center;
