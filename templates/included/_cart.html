@@ -2,9 +2,12 @@
 {% load static %}
 
 <link rel="stylesheet" href="{% static 'css/cart.css' %}">
+<script src="{% static 'js/scroll.js' %}"></script>
 
-<div class="cart scroll sticky">
+<div class="cart scroll sticky" id="scroll" onmouseover="unRollScroll()" onmouseleave="rollScroll()">
     cart
     {% include 'included/cart/scrollend_left.html' %}
     {% include 'included/cart/scrollend_right.html' %}
+    {% include 'included/cart/scrollend_left_unscrolled.html' %}
+    {% include 'included/cart/goods-list.html' %}
 </div>

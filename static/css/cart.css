@@ -21,10 +21,6 @@
     text-align: center;
 }
 
-.cart.scroll:hover{
-    height: 100%;
-}
-
 .cart.sticky{
     position: fixed;
 }

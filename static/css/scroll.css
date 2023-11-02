@@ -9,14 +9,49 @@
     stroke: none;
 }
 
-.scrollend-left{
+.scrollend{
     position: relative;
+}
+
+.scrollend-left.rolled{
     top: -115%;
     right: 51%;
 }
 
+.scrollend-left.unrolled{
+    top: -370%;
+    right: 51%;
+
+    fill: none;
+    stroke: none;
+}
+
 .scrollend-right{
-    position: relative;
-    top: -258%;
+    top: -257%;
     right: -51%;
+}
+
+.goods-list{
+    display: inline-flex;
+    flex-direction: column;
+
+    position: relative;
+    top: -371%;
+
+    width: 100%;
+
+    color: black;
+    background-color: white;
+    opacity: 0;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-right-width: 0;
+
+    text-align: start;
+}
+
+.position{
+    flex: 1;
 }
