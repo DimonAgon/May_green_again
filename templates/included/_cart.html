@@ -1,0 +1,10 @@
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/cart.css' %}">
+
+<div class="cart scroll sticky">
+    cart
+    {% include 'included/cart/scrollend_left.html' %}
+    {% include 'included/cart/scrollend_right.html' %}
+</div>

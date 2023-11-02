@@ -1,0 +1,22 @@
+
+.scroll{
+    fill: white;
+    stroke: black;
+}
+
+.scroll:hover{
+    fill: none;
+    stroke: none;
+}
+
+.scrollend-left{
+    position: relative;
+    right: 78px;
+    top: -29.5px;
+}
+
+.scrollend-right{
+    position: relative;
+    top: -65.5px;
+    right: -78px;
+}
