@@ -11,12 +11,12 @@
 
 .scrollend-left{
     position: relative;
-    right: 78px;
-    top: -29.5px;
+    top: -115%;
+    right: 51%;
 }
 
 .scrollend-right{
     position: relative;
-    top: -65.5px;
-    right: -78px;
+    top: -258%;
+    right: -51%;
 }
