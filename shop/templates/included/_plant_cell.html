@@ -2,19 +2,22 @@
 
 <link rel="stylesheet" href="{% static "css/plant_cell.css" %}">
 
-<div class="col-md-4 px-3 pt-1 pb-0">
+<div class="col-md-3 px-2">
     <div class="card plant-cell">
+        <div class="card-header">
+            {{ plant.name }}
+        </div>
         <div class="card-body">
             <div class="card-text">
-                {{ plant.name }}
+
             </div>
         </div>
     </div>
     {% if forloop.counter0|divisibleby:3 %}
-        {% include 'included/_plant_cell/_smudge_bottom.html' %}
+{#        {% include 'included/_plant_cell/_smudge_bottom.html' %}#}
 
     {% elif forloop.counter|divisibleby:3 %}
-        {% include 'included/_plant_cell/_smudge_side.html' %}
+{#        {% include 'included/_plant_cell/_smudge_side.html' %}#}
     {% endif %}
 
 </div>
