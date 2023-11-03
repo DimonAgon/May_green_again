@@ -15,12 +15,12 @@
 
 .scrollend-left.rolled{
     top: -115%;
-    right: 51%;
+    right: 52%;
 }
 
 .scrollend-left.unrolled{
-    top: -370%;
-    right: 51%;
+    top: -455%;
+    right: 52%;
 
     fill: none;
     stroke: none;
@@ -28,7 +28,18 @@
 
 .scrollend-right{
     top: -257%;
-    right: -51%;
+    right: -52%;
+}
+
+#whitener-div{
+    position: relative;
+    top: -356%;
+    right: -99%;
+
+    height: 22px;
+    width: 2px;
+
+    background-color: white;
 }
 
 .goods-list{
@@ -36,9 +47,10 @@
     flex-direction: column;
 
     position: relative;
-    top: -371%;
+    top: -458%;
+    right: 0.5%;
 
-    width: 100%;
+    width: 100.5%;
 
     color: black;
     background-color: white;
