@@ -3,7 +3,30 @@
 
   width: auto;
   height: auto;
-  margin-bottom: 30px;
 
-  box-shadow: -1px 1px 5px 1px black;
+  box-shadow: -1px 1px 10px 1px black;
+}
+
+.background-buffer{
+  z-index: -1;
+
+  background-color: #dc6e9b;
+}
+
+#lower-background-buffer{
+  width: 546.5px;
+  height: 30px;
+
+  position: relative;
+  right: -25.4%;
+  top: -1%;
+}
+
+#upper-background-buffer{
+  width: 546.5px;
+  height: 1rem;
+
+  position: relative;
+  right: -25.4%;
+  top: -1%;
 }
