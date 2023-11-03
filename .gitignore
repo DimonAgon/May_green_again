@@ -8,6 +8,7 @@
 *.pyc
 __pycache__/
 local_settings.py
+May_green_again/settings.py
 db.sqlite3
 media
 
@@ -201,6 +202,9 @@ celerybeat-schedule
 venv/
 ENV/
 
+# side packages
+Lib
+
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -212,3 +216,10 @@ ENV/
 /site
 
 # End of https://www.gitignore.io/api/macos,linux,django,python,pycharm
+/node_modules/
+/package.json
+/package-lock.json
+/pyvenv.cfg
+/Scripts/
+
+

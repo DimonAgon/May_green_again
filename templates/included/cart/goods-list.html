@@ -1,0 +1,12 @@
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/scroll.css' %}">
+
+<div class="goods-list" id="goods-list">
+    {% for plant in plants %}
+        <div class="position">
+            {{ plant.name }}
+        </div>
+    {% endfor %}
+</div>

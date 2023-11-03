@@ -5,7 +5,7 @@ class Tag(models.Model):
     name = models.CharField(verbose_name="tag", max_length=120)
 
 
-class Good(models.Model):
+class BaseGood(models.Model):
     name = models.CharField(verbose_name="good's name", max_length=300)
     about = models.TextField(verbose_name="about good", blank=True)
     tag = models.ManyToManyField(Tag, verbose_name="good's tags", blank=True)
@@ -14,9 +14,16 @@ class Good(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        abstract = True
 
-class Plant(Good):
+
+class Good(BaseGood):
     pass
+
+
+class Plant(BaseGood):
+    latina_name = models.CharField(verbose_name="latina name", max_length=300)
 
 
 class Cart(models.Model):

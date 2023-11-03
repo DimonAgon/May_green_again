@@ -1,0 +1,14 @@
+
+
+/* TODO: add hover */
+.smudge-bottom{
+    position: relative;
+    top: -26px;
+    left: -60px;
+}
+
+.smudge-side{
+    position: relative;
+    top: -250px;
+    left: 181px;
+}

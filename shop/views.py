@@ -8,5 +8,3 @@ def gardensite(request):
     context = {'plants': plants}
     return render(request, r'gardensite.html', context)
 
-def cart(request):
-    return render(request, r'cart.html')

@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Custom";
+    src: url("../..static/fonts/buletto_killa/bulletto_killa-webfont.woff") format("woff"),
+        url("../../static/fonts/buletto_killa/bulletto_killa-webfont.woff2") format("woff2");
+}
+
+.card{
+    margin-top: 1px;
+
+    background-color: transparent;
+
+    border-style: solid;
+    border-width: 7px;
+    border-color: #d8669a;
+    box-shadow: 0 1px 1px black;
+}
+
+.card-body{
+    padding: 0;
+    aspect-ratio: 1/1;
+
+    background-color: white;
+}
+
+.card-header{
+    height: 2rem;
+    line-height: 0.5rem;
+
+    background-color: white;
+
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: black;
+
+    text-align: center;
+    vertical-align: center;
+}
