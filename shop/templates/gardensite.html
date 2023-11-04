@@ -11,10 +11,12 @@
 {% endblock %}
 
 {% block header %}
+    {% include 'included/sections/contact_section.html' %}
     {% include 'included/_intro.html' %}
 {% endblock %}
 
 {% block content %}
+
     {% for plant in plants %}
         {% if forloop.counter0|divisibleby:4 %}
             <div class="row row-cols-4">
