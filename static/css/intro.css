@@ -1,3 +1,10 @@
+.intro-group{
+  display: inline-block;
+
+  position: relative;
+  right: 5.75%;
+}
+
 .intro{
   display: inline-block;
 
@@ -16,17 +23,9 @@
 #lower-background-buffer{
   width: 546.5px;
   height: 30px;
-
-  position: relative;
-  right: -36.3%;
-  top: -1%;
 }
 
 #upper-background-buffer{
   width: 546.5px;
   height: 1rem;
-
-  position: relative;
-  right: -36.3%;
-  top: -1%;
 }
