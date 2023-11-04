@@ -10,6 +10,7 @@ class BaseGood(models.Model):
     about = models.TextField(verbose_name="about good", blank=True)
     tag = models.ManyToManyField(Tag, verbose_name="good's tags", blank=True)
     image = models.ImageField(verbose_name="good's image", blank=True)
+    price = models.FloatField(verbose_name="good's price")
 
     def __str__(self):
         return self.name
