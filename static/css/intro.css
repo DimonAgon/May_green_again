@@ -2,7 +2,7 @@
   display: inline-block;
 
   position: relative;
-  right: 5.75%;
+  right: 4.33%;
 }
 
 .intro{
@@ -20,12 +20,25 @@
   background-color: #dc6e9b;
 }
 
-#lower-background-buffer{
-  width: 546.5px;
+.vertical-background-buffer{
+  height: 307px;
+  width: 20px;
+}
+#left-vertical-background-buffer{
+  float: left;
+}
+
+#right-vertical-background-buffer{
+  float: right;
+}
+
+.horisontal-background-buffer{
+  width: 546.5px + 20px + 20px;
+}
+#lower-horisontal-background-buffer{
   height: 30px;
 }
 
-#upper-background-buffer{
-  width: 546.5px;
+#upper-horisontal-background-buffer{
   height: 1rem;
 }

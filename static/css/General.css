@@ -41,11 +41,11 @@ a:hover{
 }
 #contact-section{
   height: 3.5rem;
-  width: 14rem;
+  width: auto;
 
   position: relative;
   top: -8.8rem;
-  right: 9.3%;
+  right: 8%;
 }
 
 .sections-cluster{
