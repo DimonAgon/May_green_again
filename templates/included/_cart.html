@@ -5,10 +5,12 @@
 <script src="{% static 'js/scroll.js' %}"></script>
 
 <div class="cart scroll sticky" id="scroll" onmouseover="unRollScroll()" onmouseleave="rollScroll()">
-    cart
+    <span id="scroll-indicator">cart</span>
     {% include 'included/cart/scrollend_left.html' %}
-    {% include 'included/cart/scrollend_right.html' %}
-    <div class="whitener" id="whitener-div"></div>
+    <div class="scrollend scrollend-right rolled">{% include 'included/cart/scrollend_right.html' %}</div>
+    <div class="scrollend scrollend-right unrolled">{% include 'included/cart/scrollend_right.html' %}</div>
+    <div class="whitener scrollend rolled" id="whitener-rolled"></div>
+    <div class="whitener scrollend unrolled" id="whitener-unrolled"></div>
     {% include 'included/cart/scrollend_left_unscrolled.html' %}
     {% include 'included/cart/goods-list.html' %}
 </div>
