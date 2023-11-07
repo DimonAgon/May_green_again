@@ -57,6 +57,10 @@
 
 }
 
+.card-footer{
+    background-color: white;
+}
+
 .price-field{
  float: right;
 }

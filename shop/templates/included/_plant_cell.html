@@ -20,6 +20,16 @@
                 {{ plant.about }}
             </div>
         </div>
+
+        <div class="card-footer">
+            <span class="tags-field">
+                {% for tag in plant.tag.all %}
+                    {% if not tag.name == 'plant' %}
+                        <span class="tag">#{{ tag.name }}</span>
+                    {% endif %}
+                {% endfor %}
+            </span>
+        </div>
     </div>
     {% if forloop.counter0|divisibleby:3 %}
 {#        {% include 'included/_plant_cell/_smudge_bottom.html' %}#}
