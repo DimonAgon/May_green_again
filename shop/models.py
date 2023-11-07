@@ -4,6 +4,9 @@ from django.db import models
 class Tag(models.Model):
     name = models.CharField(verbose_name="tag", max_length=120)
 
+    def __str__(self):
+        return self.name
+
 
 class BaseGood(models.Model):
     name = models.CharField(verbose_name="good's name", max_length=300)
