@@ -32,13 +32,13 @@ a:hover{
   font-weight: 800;
   -webkit-text-stroke: 1px #4ca685;
 }
-#contact-section{
+#contact-section {
   height: 3.5rem;
   width: auto;
 
   position: relative;
   top: -8.8rem;
-  right: 8%;
+  right: 9.25%;
 }
 
 .sections-cluster{

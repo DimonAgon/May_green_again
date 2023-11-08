@@ -9,6 +9,7 @@
 __pycache__/
 local_settings.py
 May_green_again/settings.py
+settings.py
 db.sqlite3
 media
 
@@ -221,5 +222,6 @@ Lib
 /package-lock.json
 /pyvenv.cfg
 /Scripts/
+
 
 
