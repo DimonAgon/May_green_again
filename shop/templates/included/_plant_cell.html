@@ -5,11 +5,19 @@
 <div class="col-md-3 px-2 pb-3">
     <div class="card plant-cell">
         <div class="card-header">
-            <span>{{ plant.name }}</span>
+            <span class="name-field">{{ plant.name }}</span>
+            <span class="price-field">${{ plant.price|floatformat:"-2"}}</span>
         </div>
         <div class="card-body">
-            <div class="card-text">
+            <div class="media-body">
+                {% if plant.image %}
+                    <img id="plant-image" src="{{ plant.image.url }}">
 
+                {% else %}
+                    {# TODO: add plant photo placeholder #}
+                {% endif %}
+
+                {{ plant.about }}
             </div>
         </div>
     </div>

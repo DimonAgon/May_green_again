@@ -1,18 +1,16 @@
 
 function unRollScroll(){
-    const scroll = document.getElementById('scroll')
-    scroll.style.color = 'transparent'
+    const indicator = document.getElementById('scroll-indicator')
+    indicator.style.visibility = 'hidden'
 
-    const outer_bundle_elements = document.getElementsByClassName('outer-bundle');
-    for (const element of outer_bundle_elements) {
-    element.style.fill = 'none';
-    element.style.stroke = 'none';
+    const rolled = document.getElementsByClassName('rolled');
+    for (const element of rolled) {
+        element.style.display = 'none';
     }
 
-    const inner_bundle_elements = document.getElementsByClassName('inner-bundle');
-    for (const element of inner_bundle_elements) {
-        element.style.fill = 'white';
-        element.style.stroke = 'black';
+    const unrolled = document.getElementsByClassName('unrolled');
+    for (const element of unrolled) {
+        element.style.display = 'block';
     }
 
     const goodsList = document.getElementById('goods-list');
@@ -20,25 +18,17 @@ function unRollScroll(){
 }
 
 function rollScroll(){
-    const scroll = document.getElementById('scroll')
-    scroll.style.color = 'black'
+    const indicator = document.getElementById('scroll-indicator')
+    indicator.style.visibility = 'initial'
 
-    const inner_bundle_elements = document.getElementsByClassName('inner-bundle');
-    for (const element of inner_bundle_elements) {
-        element.style.fill = 'none';
-        element.style.stroke = 'none';
+    const rolled = document.getElementsByClassName('rolled');
+    for (const element of rolled) {
+        element.style.display = 'block';
     }
 
-    const outer_bundle_elements_lit = document.querySelectorAll('.outer-bundle.lit');
-    for (const element of outer_bundle_elements_lit) {
-        element.style.fill = 'white';
-        element.style.stroke = 'black';
-    }
-
-    const outer_bundle_elements_shadowed = document.querySelectorAll('.outer-bundle.shadowed');
-    for (const element of outer_bundle_elements_shadowed) {
-        element.style.fill = '#D9D9D9';
-        element.style.stroke = 'black';
+    const unrolled = document.getElementsByClassName('unrolled');
+    for (const element of unrolled) {
+        element.style.display = 'none';
     }
 
     const goodsList = document.getElementById('goods-list');

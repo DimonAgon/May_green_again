@@ -17,14 +17,14 @@
 </head>
 <body>
     {% block nav %} {% endblock %}
-    <div class="header">
+    <div class="container" id="header-container">
         {% block header %} {% endblock %}
     </div>
 
-    <div class="container">
+    <div class="container" id="aimed-content-container">
         {% block content %} {% endblock %}
     </div>
-    {% block included %} {% endblock %}
+    {% block included %} {% endblock %} {#TODO: fix included inside aimed-content container#}
     <!-- contact button -->
 
 </body>

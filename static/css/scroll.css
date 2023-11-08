@@ -12,6 +12,9 @@
 .scrollend{
     position: relative;
 }
+.unrolled{
+    display: none;
+}
 
 .scrollend-left.rolled{
     top: -115%;
@@ -19,7 +22,7 @@
 }
 
 .scrollend-left.unrolled{
-    top: -455%;
+    top: -295.5%;
     right: 52%;
 
     fill: none;
@@ -27,19 +30,29 @@
 }
 
 .scrollend-right{
-    top: -257%;
     right: -51%;
 }
+.scrollend-right.rolled{
+    top: -257%;
+}
 
-#whitener-div{
-    position: relative;
-    top: -356%;
-    right: -99%;
-
+.scrollend-right.unrolled{
+    top: -100%;
+}
+.whitener{
     height: 22px;
     width: 2px;
 
+    right: -99%;
+
     background-color: white;
+}
+.whitener.rolled{
+    top: -356%;
+}
+
+.whitener.unrolled{
+    top: -200%;
 }
 
 .goods-list{
@@ -47,7 +60,7 @@
     flex-direction: column;
 
     position: relative;
-    top: -458%;
+    top: -300%;
     right: 0.5%;
 
     width: 100.5%;
